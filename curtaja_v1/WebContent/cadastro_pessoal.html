@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cadastro Cliente</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link rel="stylesheet" href="css/svwp_style.css" type="text/css" media="screen" />
+</head>
+
+<script language="javascript" type="text/javascript">
+
+		function vFormulario(){
+			if( document.cadastro.email.value=="" || document.cadastro.email.value.indexOf('@')==-1 || document.cadastro.email.value.indexOf('.')==-1 ) { 
+			alert( "Preencha campo E-MAIL corretamente!" ); 
+			document.cadastro.email.focus(); 
+			return false; 
+			}
+			if(!(document.cadastro.senha.value == document.cadastro.senha2.value)){
+				alert("Os campos das senhas devem ser iguais !!!");
+				document.cadastro.senha.focus();
+				return (false);
+			}
+			else alert("Cadastro realizado com sucesso.")
+			
+		}
+
+</script>
+
+<style type="text/css">
+	html{
+      background:url(http://curtajaofficial.com/img/cadastro_pessoal.jpg) no-repeat center center fixed;
+      - moz-background-size: cover;
+      - o-background-sizer: cover;
+      background-suze:cover;
+	  background-position: 50%;
+	  background-size: 1300px;
+      }	  
+</style>
+
+<style type="text/css">
+	div.sobre{
+		   text-color: black;
+		   background-color: white;
+		   width: 50%;
+		   height:100%;
+		   border: 2px solid;
+           border-color:black;	
+		   margin-top:4px;
+		   margin-bottom:2px;
+		   margin-left: 25%;
+		   padding-top: 2%;		    
+		   height: 560px; 
+		   border: 0px solid black; 
+	       opacity: 0.92;
+          -moz-opacity:0.90;
+          -webkit-opacity:0.90;
+      }	  
+</style>
+
+<style type="text/css">
+	div.pri{
+			align: center;
+		   width: 80%;
+		   height:100%;
+		   border: 0px solid;
+           border-color:white;	
+		   margin-top:0px;
+		   margin-bottom:0px;
+		   margin-left: 2%;
+		   padding-top: 5%;
+      }	  
+</style>
+
+<link rel="icon" type="image/png" href="icone"/>
+
+<body>
+
+<div class = "pri" align="center">
+<br />
+  <form action="adicionaContato" onsubmit= "return vFormulario()" method="post">
+	
+	<div class="sobre" align="center">
+	<p align="center"><font color="red">Todos os campos marcados com (*) devem ser prenchidos !!! </font></p>
+		<br />
+		<p>
+			<label for = "responsavel">Nome Completo: *</label>
+			<input type="text" name="name" size=50 minlength=5 maxlength=30 align="center-left" required/>
+			</br>
+		</p>
+	
+		<p>
+			<label for = "email">E-mail: *</label>
+			<input type="text" name="email" placeholder="contato@curtaja.com" size=50 align="center-left" required/>
+			</br>
+		</p>
+	
+		<p>
+			<label for = "cpf" align="left">CPF/CNPJ: *</label>
+			<input type="text" name="cpf" placeholder="000.000.000-00" size="50" minlength=14 maxlength=14 align="center-left" required/>
+			</br>
+		</p>
+		
+		<p>
+			<label for = "empresa">Empresa: *</label>
+			<input type="text" name="empresa" size=50 minlength=2 align="center-left" required/>
+			</br>
+		</p>
+		
+		<p>
+			<label for = "categoria">Categoria: *</label>
+            <form name="menu">
+				<select name="categories" size="1" name="D1">
+					<option selected value="festa">Festas</option>
+					<option value="discoteca">Discotecas</option>
+                    <option value="bar">Bares</option>
+                    <option value="djs_banda">Djs&Bandas</option>
+                    <option value="show">Shows</option>
+                    <option value="evento">Eventos</option>
+				</select>
+            </form>
+		</p>
+	
+		<p>
+			<label for = "endereco">Endereco: *</label>
+            <input type="text" name="endereco" size=50 minlength=10 align="center-left" required/>
+		</p>
+        
+        <p>
+			<label for = "cidade">Cidade: *</label>
+            <input type="text" name="cidade" placeholder="São Paulo - SP" size=50 minlength=4 maxlength=30 align="center-left" required/>
+		</p>
+	
+		<p>
+			<label for = "telefone">Telefone: *</label>
+            <input type="text" name="telefone" placeholder="+55(35) 9 9152-5346 " size=50 minlength= 8 maxlength=20 align="center-left" required/>
+		</p>
+        
+        <p>
+			<label for = "email">Senha: *</label>
+            <input type="password" name="senha" size=50 align="center-left" required/>
+		</p>
+        
+         <p>
+			<label for = "senha2">Repitir a senha: *</label>
+            <input type="password" name="senha2" size=50 align="center-left" required/>
+		</p>
+      
+        <p>
+        	<label for = "fileupload">Favor, colocar logo da empresa *</label>
+		<input type="file" name="fileupload" accept="image/*" required/>
+		</p>
+        
+        <p>
+        	<input type="checkbox" name="checkbox" align="center-left" required/>
+            <a href="http://www.curtajaofficial.com/termo.html" target="_blank"><u>Aceito o termo de compromisso</u></a>
+        </p>
+		<br />
+			<button type="submit" name="enviar" value="Cadastrar" class = "btn btn-primary">Confirmar</button>
+	 
+	</div>
+  </form>
+
+
+</div>
+</body>
+</html>

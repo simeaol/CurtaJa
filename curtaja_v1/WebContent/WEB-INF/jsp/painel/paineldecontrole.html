@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<title>Painel de Controle</title>
+	
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/box.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/svwp_style.css" type="text/css" media="screen" />	
+	<link rel="stylesheet" href="css/my_style.css" type="text/css" media="screen" />
+	
+
+<style type="text/css">
+	
+	.container{
+		width: 100%;
+		height: 100%;
+	}
+	
+	.cabecalho{
+		width: 99.2%;
+		height: 200px;
+		text-align: justify;
+		margin-left: 0.4%;
+		border: 5px;
+		padding: 15px;
+		border-color: black;
+		background-color: #3B0B2E;	
+	}
+	
+	.cabecalho-item{
+		align: right;
+		margin-right: 1%;
+		text-decoration: underline;	
+	}
+	
+	.menu{
+		width: 100%;
+		height: 500px;
+		border: 0.5px;
+		border-color: aqua;
+		padding: 5px;
+		border: 0.5px;	
+	}
+	
+	.menu-item{	
+		display: inline;
+		float: left;
+		position: static;
+		border-style:solid;
+   		border-width:1px;
+		border-color: black;
+		background-color: white;
+		
+	}
+	
+	#menu-item-1{
+		width: 20%;
+		height: 100%;
+		margin-right: -0.55%;
+		padding-left: 1%;
+		background-color: #151515;
+	}
+	
+	#menu-item-2{
+		width: 79.5%;
+		height: 100%;
+		margin-left: 1%;
+		padding-left: 1%;
+		border-style:solid;
+   		border-width:1px;
+		border-color: black;
+	}
+	
+	.menu-content{
+		width: 45%;
+		height: 100%;
+		position: inherit;
+		border: 0.5px;
+		border-color: aqua;
+		padding: 5px;
+		background-color: blue;
+		
+	}
+	
+	.grid-layout{
+		width: 100%;
+		height: 100%;
+		background-color: green;
+				
+	}
+	
+	.text{
+		width: 106%;
+		height: 35px;
+		border-width: 0px;
+		border-style: solid;
+		border-color: blue;
+		margin-left: -14px;
+		padding-left: 20px;
+	}
+	
+	.text:LINK{
+		text-decoration: none;
+	}
+	.text:hover{
+		color: #888788;
+		text-decoration: none;
+		background-color: black;
+	}
+	.text:ACTIVE {
+		color: #888788;
+		background-color: black;
+		text-decoration: overline;
+	}
+	
+</style>
+
+<script src="js/jquery.js"></script>
+	<script>
+		$(function(){
+			$( "#editar" ).click(function(e){
+			$("#content").load("cadastro_pessoal.html");
+			e.preventDefault();
+             });
+      });
+		
+		$(function(){
+			$( "#cadastrar" ).click(function(e){
+			$("#content").load("cadastro_eventos.html");
+			e.preventDefault();
+             });
+      });
+		
+		$(function(){
+			$( "#mudarplano" ).click(function(e){
+			$("#content").load("cadastro_pessoal.html");
+			e.preventDefault();
+             });
+      });
+		
+		$(function(){
+			$( "#estatistica" ).click(function(e){
+			$("#content").load("quemsomos.html");
+			e.preventDefault();
+             });
+      });
+		
+		$(function(){
+			$( "#contatar" ).click(function(e){
+			$("#content").load("missao.html");
+			e.preventDefault();
+             });
+      });
+		
+		$(function(){
+			$( "#cancelar" ).click(function(e){
+			$("#content").load("missao.html");
+			e.preventDefault();
+             });
+      });
+</script>
+
+
+</head>
+<body>
+<div class="container">
+	<!--This is the header section -->
+	<header>
+		<div class="cabecalho">
+			<div class="cabecalho-item" align="right">
+					<h3 color="#D8D8D8A"><font color="#D8D8D8">Nome Cliente</h3>
+			</div>
+					<div class="cabecalho-item" align="right">
+					<style>mark {background-color:#00ff00; color:#000000;}</style>
+					<a href="#"><font color="red">Sair</font></a>
+			</div>
+		</div>	
+	</header>
+	
+	<!--This is the menu and menu-item section -->	
+	<section>
+		<div class="menu">
+			<style>mark {background-color:#00ff00; color:#000000;}</style>
+			<div class="menu-item" id="menu-item-1">
+				<br />
+				<h2><font color="#D8D8D8"><span style="margin-left: 75px">Menu</span></h2>
+				<br />
+				<div class="text">
+					<a href="#" id="editar"><font color="#D8D8D8"><font size="4">Editar Perfil</font></a>
+				</div>
+				<br />
+				<div class="text">
+					<a href="#cadastrar" id="cadastrar"><font color="#D8D8D8"><font size="4">Cadastrar Evento</font></a>
+				</div>
+				<br />
+				<div class="text">
+					<a href="#mudarplano" id="mudarplano"><font color="#D8D8D8"><font size="4">Mudar de plano</font></a>
+				</div>
+				<br />
+				<div class="text">
+					<a href="#estatistica" id="estatistica"><font color="#D8D8D8"><font size="4">Estatística</font></a>
+				</div>
+				<br />
+				<div class="text">
+					<a href="#contatar" id="contatar"><font color="#D8D8D8"><font size="4">Entrar em contato conosco</font></a>
+				</div>
+				<br />
+				<div class="text">
+					<a href="#cancelar" id="cancelar"><font color="#D8D8D8"><font size="4">Cancelar Assinatura</font></a>
+				</div>
+								
+			</div>
+			
+		<!--This is the menu content section -->
+			<div class="menu-item" id="menu-item-2">
+				<div id="content">
+				</div>				
+			</div>
+			
+		</div>		
+		
+	</section>
+	<br />
+	<section>
+		<!-- This is the grid-layout section-->
+			<div class="grid-layout">
+				<p>
+					akçldfçalk
+				asdfjçasjdf
+				ksafjkajsdf
+				sdlknfklansdfka
+				nsldfnalksndf
+				sdnfka~lsndfasnsdfa
+				asdlfknasldfnkasdf
+				nlaksdnfklasndfãlsdf
+				asdfnalskdnflaksndf
+				asdfnkalsdnfklasdf
+				asdnfklasdnflkansdf
+				
+				akçldfçalk
+				asdfjçasjdf
+				ksafjkajsdf
+				sdlknfklansdfka
+				nsldfnalksndf
+				sdnfka~lsndfasnsdfa
+				asdlfknasldfnkasdf
+				nlaksdnfklasndfãlsdf
+				asdfnalskdnflaksndf
+				asdfnkalsdnfklasdf
+				asdnfklasdnflkansdf
+				
+				akçldfçalk
+				asdfjçasjdf
+				ksafjkajsdf
+				sdlknfklansdfka
+				nsldfnalksndf
+				sdnfka~lsndfasnsdfa
+				asdlfknasldfnkasdf
+				nlaksdnfklasndfãlsdf
+				asdfnalskdnflaksndf
+				asdfnkalsdnfklasdf
+				asdnfklasdnflkansdf
+				
+				akçldfçalk
+				asdfjçasjdf
+				ksafjkajsdf
+				sdlknfklansdfka
+				nsldfnalksndf
+				sdnfka~lsndfasnsdfa
+				asdlfknasldfnkasdf
+				nlaksdnfklasndfãlsdf
+				asdfnalskdnflaksndf
+				asdfnkalsdnfklasdf
+				asdnfklasdnflkansdf
+				</p>				
+			</div>
+	</section>
+
+</div>
+</body>
+</html>

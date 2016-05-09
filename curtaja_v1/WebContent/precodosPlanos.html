@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>HTML Layouts using DIV, SPAN</title>
+<meta charset="utf-8">
+
+<style>
+
+table, td, th, tfoot {border:solid 1px #000; padding:12px;}
+th {background-color:purple;}
+caption {font-size:x-large;}
+colgroup {background:#EBECED;}
+.coluna1 {background:#CACDD0;}
+.coluna2 {background:#70767C;}
+.coluna3 {background:#333333;}
+.coluna4 {background:#1E1E1E;}
+
+</style>
+
+
+<table align="center" summary="O CurtaJa oferece uma grande variedade de Planos ">
+<thead>
+<tr><th colspan="12"><font color="white">Tabela de preços</th></tr>
+</thead>
+<colgroup span="1"></colgroup>
+<td class="coluna1"><font color="black">Planos</td>
+<td class="coluna2"><font color="white">Básico</td>
+<td class="coluna3"><font color="white">Médio</td>
+<td class="coluna4"><font color="white">Premium</td>
+
+<tfoot>
+<tr>
+<td></td>
+<td><input type="submit" name="planoBasico" value="Comprar" class = "btn btn-primary"/></td>
+<td><input type="submit" name="planoMedium" value="Comprar" class = "btn btn-primary"/></td>
+<td><input type="submit" name="planoPremium" value="Comprar" class = "btn btn-primary"/></td>
+</tr>
+
+</tfoot>
+
+<tbody>
+<tr>
+<td>Aplicativo</td>
+<td align="center">x</td>
+<td align="center">x</td>
+<td align="center">x</td>
+</tr>
+
+<tr>
+<td>Facebook</td>
+<td align="center">x</td>
+<td align="center">x</td>
+<td align="center">x</td>
+</tr>
+
+<tr>
+<td>Instagram</td>
+<td align="center">x</td>
+<td align="center">x</td>
+<td align="center">x</td>
+</tr>
+
+<tr>
+<td>Twitter</td>
+<td align="center">x</td>
+<td align="center">x</td>
+<td align="center">x</td>
+</tr>
+
+<tr>
+<td>Google+</td>
+<td align="center">x</td>
+<td align="center">x</td>
+<td align="center">x</td>
+</tr>
+
+<tr>
+<td>Tsu</td>
+<td align="center">x</td>
+<td align="center">x</td>
+<td align="center">x</td>
+</tr>
+
+<tr>
+<td>Regiao</td>
+<td align="center">-</td>
+<td align="center">x</td>
+<td align="center">x</td>
+</tr>
+
+<tr>
+<td>Partilha de Fotos</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">x</td>
+</tr>
+
+<tr>
+<td>Partilha de Videos</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">x</td>
+</tr>
+
+<tr>
+<td>Preços</td>
+<td align="center">R$80</td>
+<td align="center">R$160</td>
+<td align="center">R$320</td>
+</tr>
+
+</tbody>
+</table>
