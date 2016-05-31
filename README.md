@@ -1,2 +1,0 @@
-# CurtaJa
-CurtaJa Android code
