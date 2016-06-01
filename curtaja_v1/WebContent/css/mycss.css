@@ -90,11 +90,14 @@ body{
 
 
 
+body > .container {
+  padding-top: 500px;
+}
 
 
 .full {
     width: 100%;    
-}
+}	
 .gap {
     height: 30px;
     width: 100%;
@@ -108,6 +111,7 @@ background-image: -webkit-gradient(
     left bottom,
     color-stop(0, #670470),
     color-stop(0.76, #2B0230)
+	margin-top: 3.3%;
 );
 background-image: -o-radial-gradient(bottom, #670470 0%, #2B0230 76%);
 background-image: -moz-radial-gradient(bottom, #670470 0%, #2B0230 76%);

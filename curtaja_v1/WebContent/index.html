@@ -13,12 +13,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/mycss.css" rel="stylesheet">
 	<link href="css/box.css" rel="stylesheet">
+	<link rel="icon" type="image/png" href="icone.jpg"/>
+	
 
     <link rel="stylesheet" href="css/svwp_style.css" type="text/css" media="screen" />
 	
 	<link rel="stylesheet" href="css/my_style.css" type="text/css" media="screen" />
 
-<body>
+<body>    
 
 <!--BEGIN NAV-->
 <nav class="navbar navbar-default navbar-inverse" role="navigation" id="mynav">
@@ -37,7 +39,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navlinks">
-        <li class="active"><a href="#" align="center">Home</a></li>
+        <li class="active"><a href="#"><p  align="center">Home</p></a></li>
 		
 		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"><p  align="center">A Empresa</p></a>
 		  <ul class="dropdown-menu">
@@ -49,12 +51,11 @@
 		
 		<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"><p  align="center">Eventos</p></a>
 		  <ul class="dropdown-menu">
-			<a href="#"><p align="center"><font color="black">Festas</font></p></a>
-			<a href="#"><p align="center"><font color="black">Discotecas</font></p></a>
-			<a href="#"><p align="center"><font color="black">Bares</font></p></a>
-			<a href="#"><p align="center"><font color="black">Djs/Bandas</font></p></a>
-			<a href="#"><p align="center"><font color="black">Shows</font></p></a>
-			<a href="#"><p align="center"><font color="black">Eventos</font></p></a>
+			<a href="discotecas.html"><p align="center">Discotecas</p></a>
+			<a href="festas.html"><p align="center">Festas</p></a>
+			<a href="bares.html"><p align="center">Bares</p></a>
+			<a href="djsebandas.html"><p align="center">Djs/Bandas</p></a>
+			<a href="shows.html"><p align="center">Shows</p></a>
 		  </ul>
 		</li>
 		
@@ -76,8 +77,9 @@
                      <div class="row">
                             <div class="col-md-12">
                                 Login via
+
                                 
-                                 <form name= "myForm" class="form" role="form" action="login" method="post" accept-charset="UTF-8" id="login-nav">
+                                 <form name= "myForm" class="form" role="form" method="post" action="http://curtajaofficial.com/login" accept-charset="UTF-8" id="login-nav">
                                         <div class="form-group">
                                              <label class="sr-only" for="exampleInputEmail2">Email address</label>
                                              <input name="email" type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required>
@@ -98,7 +100,7 @@
                                  </form>
                             </div>
                             <div class="bottom text-center">
-                                New here ? <a href="cadastro_pessoal.html"><b>Join Us</b></a>
+                                <a href="http://www.curtaja.com/cadastro_pessoal.html"><b>Join Us</b></a>
                             </div>
                      </div>
                 </li>
@@ -123,7 +125,7 @@
 	<div>
 		<a href="#close" title="Close" class="close">X</a>
 		<h2><p align="center"><b>Quem Somos</p></b></h2>
-		<p>O <b>CurtaJa</b> é formada por uma equipe coesa de Engenheiros, Desenvolvedores Web, Desenvolvidores de Aplicativos, Designer Gráficos e consultores em Gestão 
+		<p>O <b>CurtaJa</b> é formada por uma equipe coesa de Engenheiros, Desenvolvedores Web, Desenvolvedores de Aplicativos, Designer Gráficos e consultores em Gestão 
 		da Informação  que conseguem absorver de forma racional as necessidades do mercado e transformá-las em ofertas personalizadas e segmentadas de acordo com 
 		a necessidade dos seus clientes, agregando simplicidade e valor aos seus produtos e serviços de gestão da informação. Nosso indicador de satisfação é a 
 		segurança dos nossos clientes ao contratarem nossos serviços, pois atuamos sobre uma base consistente de valores, buscando relações estáveis de parceria e 
@@ -214,7 +216,7 @@ e Djs. Fundada em 2015 pelo Senhor Hermane de Boavida, na cidade de Santa Rita d
 
 
 
-</br></br></br>
+</br></br>
 <!--BEGIN SLIDER-->
     <!-- #region Jssor Slider Begin -->
 
@@ -266,7 +268,7 @@ e Djs. Fundada em 2015 pelo Senhor Hermane de Boavida, na cidade de Santa Rita d
                 $Cols: 10,
                 $SpacingX: 8,
                 $SpacingY: 8,
-                $Align: 360
+                $Align: 480
               }
             };
             
@@ -292,7 +294,7 @@ e Djs. Fundada em 2015 pelo Senhor Hermane de Boavida, na cidade de Santa Rita d
         };
     </script>
 
-    <style type="text/css">
+    <style>
         
         /* jssor slider arrow navigator skin 05 css */
         /*
@@ -502,7 +504,7 @@ e Djs. Fundada em 2015 pelo Senhor Hermane de Boavida, na cidade de Santa Rita d
 
     <!-- #endregion Jssor Slider End -->
 <!--END SLIDER-->
-</br></br></br />
+</br></br></br>
 <section>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <footer>
@@ -525,7 +527,7 @@ e Djs. Fundada em 2015 pelo Senhor Hermane de Boavida, na cidade de Santa Rita d
     
     <div class="footer-bottom">
         <div class="container">
-            <center><p> Copyright © CurtaJa. All right reserved. <a href="http://curtajaofficial.com/politicadeprivacidade.html" align="right"><u>Termo de uso e Política de Privacidade</u></a> </p></center>
+            <center><p> Copyright © CurtaJa. All right reserved. <a href="http://curtaja.com/politicadeprivacidade.html" align="right"><u>Termo de uso e Política de Privacidade</u></a> </p></center>
 			
 		
         </div>

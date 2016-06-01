@@ -1,4 +1,4 @@
-function exiibir( n){
+function exiibir(var n){
 	if(n==0){
 			function exibirQuemSomos(){
 			
@@ -38,7 +38,7 @@ function exiibir( n){
 	if(n==6)		
 			function exibirDesenvolArtes(){
 			
-				window.open('http://curtajaofficial.com/desenvolvimentodeartes', 'desenvolvimentodeartes',	'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=30, LEFT=100, WIDTH=770, HEIGHT=600');
+				window.open('http://curtajaofficial.com/desenvolvimentodeartes, 'desenvolvimentodeartes',	'STATUS=NO, TOOLBAR=NO, LOCATION=NO, DIRECTORIES=NO, RESISABLE=NO, SCROLLBARS=YES, TOP=30, LEFT=100, WIDTH=770, HEIGHT=600');
 			
 			}
 }
