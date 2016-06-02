@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cadastro Cliente</title>
+<title>Cadastro</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="icone.jpg"/>
 	
     <link rel="stylesheet" href="css/svwp_style.css" type="text/css" media="screen" />
 </head>
@@ -23,7 +24,6 @@
 				document.cadastro.senha.focus();
 				return (false);
 			}
-			else alert("Cadastro realizado com sucesso.")
 			
 		}
 
@@ -31,7 +31,7 @@
 
 <style type="text/css">
 	html{
-      background:url(http://curtajaofficial.com/img/cadastro_pessoal.jpg) no-repeat center center fixed;
+      background:url(http://curtaja.com/img/cadastro_pessoal.jpg) no-repeat center center fixed;
       - moz-background-size: cover;
       - o-background-sizer: cover;
       background-suze:cover;
@@ -79,8 +79,9 @@
 <body>
 
 <div class = "pri" align="center">
-<br />
-  <form action="adicionaContato" onsubmit= "return vFormulario()" method="post">
+
+ <br />
+  <form name="cadastro" action='http://curtaja.com/cadastrocliente' onsubmit= "return vFormulario()" method="post">
 	
 	<div class="sobre" align="center">
 	<p align="center"><font color="red">Todos os campos marcados com (*) devem ser prenchidos !!! </font></p>
@@ -113,12 +114,11 @@
 			<label for = "categoria">Categoria: *</label>
             <form name="menu">
 				<select name="categories" size="1" name="D1">
-					<option selected value="festa">Festas</option>
+					<option selected value="#">Festas</option>
 					<option value="discoteca">Discotecas</option>
                     <option value="bar">Bares</option>
-                    <option value="djs_banda">Djs&Bandas</option>
+                    <option value="djs_banda">Djs & Bandas</option>
                     <option value="show">Shows</option>
-                    <option value="evento">Eventos</option>
 				</select>
             </form>
 		</p>
@@ -155,7 +155,7 @@
         
         <p>
         	<input type="checkbox" name="checkbox" align="center-left" required/>
-            <a href="http://www.curtajaofficial.com/termo.html" target="_blank"><u>Aceito o termo de compromisso</u></a>
+            <a href="http://www.curtaja.com/termo.html" target="_blank"><u>Aceito o termo de compromisso</u></a>
         </p>
 		<br />
 			<button type="submit" name="enviar" value="Cadastrar" class = "btn btn-primary">Confirmar</button>

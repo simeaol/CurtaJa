@@ -2,7 +2,7 @@
 <html lang="pt">
 
 <head>
-<title>Eventos</title>
+<title>Shows</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
@@ -11,9 +11,10 @@
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/coin-slider.min.js"></script>
+<link rel="icon" type="image/png" href="icone.png"/>
 
 </head>
-<body>
+<body bgcolor="black">
 <div class="main">
 <div id="structure">
   <div class="header">
@@ -25,7 +26,7 @@
       <div class="clr"></div>
       <div class="menu_nav">
         <ul>
-          <li class="active"><a href="discotecas.html"><span>Discotecas</span></a></li>
+          <li><a href="discotecas.html"><span>Discotecas</span></a></li>
           <li><a href="bares.html"><span>Bares</span></a></li>
           <li><a href="festas.html"><span>Festas</span></a></li>
           <li><a href="djsebandas.html"><span>Djs & Bandas</span></a></li>
@@ -38,33 +39,531 @@
   <div class="content">
     <div class="content_resize">
 	  <div class="fbg_resize">
-       <div class="col c1">
+      <div class="col c1">
         <h2><span>Galeria</span> de Imagens</h2>
-        <a href="#"><img src="images/gal1.jpg" width="300" height="160" alt="" class="gal" /></a>
-		<a href="#"><img src="images/gal2.jpg" width="300" height="160" alt="" class="gal" /></a> 
-		<a href="#"><img src="images/gal3.jpg" width="300" height="160" alt="" class="gal" /></a> 
-		<a href="#"><img src="images/gal4.jpg" width="300" height="160" alt="" class="gal" /></a> 
-		<a href="#"><img src="images/gal5.jpg" width="300" height="160" alt="" class="gal" /></a> 
-		<a href="#"><img src="images/gal6.jpg" width="300" height="160" alt="" class="gal" /></a> 
-		<a href="#"><img src="images/gal7.jpg" width="300" height="160" alt="" class="gal" /></a> 
-		<a href="#"><img src="images/gal8.jpg" width="300" height="160" alt="" class="gal" /></a>
-		<a href="#"><img src="images/gal9.jpg" width="300" height="160" alt="" class="gal" /></a>
-		<a href="#"><img src="images/gal10.jpg" width="300" height="160" alt="" class="gal" /></a>
-		<a href="#"><img src="images/gal11.jpg" width="300" height="160" alt="" class="gal" /></a>
-		<a href="#"><img src="images/gal12.jpg" width="300" height="160" alt="" class="gal" /></a>
-		<a href="#"><img src="images/gal13.jpg" width="300" height="160" alt="" class="gal" /></a> </div>
+
+        <a href="javascript: void(0)"><img id="img1" alt="Parada Obrigatória" src="images/gal1.jpg" width="300" height="160" alt="" class="gal" /></a>
+		<a href="javascript: void(0)"><img id="img2" alt="Michel Teló" src="images/gal2.jpg" width="300" height="160" alt="" class="gal" /></a>
+		<a href="javascript: void(0)"><img id="img3" alt="Villamix" src="images/gal3.jpg" width="300" height="160" alt="" class="gal" /></a>
+		<a href="javascript: void(0)"><img id="img4" alt="#" src="images/gal4.jpg" width="300" height="160" alt="" class="gal" /></a> 
+		<a href="javascript: void(0)"><img id="img5" alt="#"src="images/gal5.jpg" width="300" height="160" alt="" class="gal" /></a> 
+		<a href="javascript: void(0)"><img id="img6" alt="#"src="images/gal6.jpg" width="300" height="160" alt="" class="gal" /></a> 
+		<a href="javascript: void(0)"><img id="img7" alt="#"src="images/gal7.jpg" width="300" height="160" alt="" class="gal" /></a> 
+		<a href="javascript: void(0)"><img id="img8" alt="#"src="images/gal8.jpg" width="300" height="160" alt="" class="gal" /></a>
+		<a href="javascript: void(0)"><img id="img9" alt="#"src="images/gal9.jpg" width="300" height="160" alt="" class="gal" /></a>
+		<a href="javascript: void(0)"><img id="img10" alt="#"src="images/gal10.jpg" width="300" height="160" alt="" class="gal" /></a>
+		<a href="javascript: void(0)"><img id="img11" alt="#"src="images/gal11.jpg" width="300" height="160" alt="" class="gal" /></a>
+		<a href="javascript: void(0)"><img id="img12" alt="#"src="images/gal12.jpg" width="300" height="160" alt="" class="gal" /></a>
+		<a href="javascript: void(0)"><img id="img13" alt="#"src="images/gal13.jpg" width="300" height="160" alt="" class="gal" /></a>
+		<a href="javascript: void(0)"><img id="img14" alt="#"src="images/gal14.jpg" width="300" height="160" alt="" class="gal" /></a>
+		<a href="javascript: void(0)"><img id="img15" alt="#"src="images/gal15.jpg" width="300" height="160" alt="" class="gal" /></a> </div>
         <div class="clr"></div>
        </div>
-        <p class="pages"><small>Page 1 of 2</small> <span>1</span> <a href="#">2</a> <a href="#">&raquo;</a></p>
+	   
+	   <!--Modal img1-->
+	   <div id="modal1" class="modal">
+
+			<!-- The Close Button -->
+			<span class="close" onclick="document.getElementById('modal1').style.display='none'">&times;</span>
+
+			<!-- Modal Content (The Image) -->
+			<img class="modal-content" id="img01">
+
+			<!-- Modal Caption (Image Text) -->
+		<div id="caption"></div>
+</div>
+       <p class="pages"><small>Page 1 of 2</small> <span>1</span> <a href="#">2</a> <a href="#">&raquo;</a></p>
       </div>
   </div>
-  <div class="fbg">
+ 
+  <style>
+  /* Style the Image Used to Trigger the Modal */
+#img1 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#img1:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+  </style>
+  
+<!--BEGIN Script for Image1-->
+
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img1');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+  </script>
+<!--END Script for Image1-->  
+
+<!--BEGIN Script for Image2-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img2');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image2-->
+
+<!--BEGIN Script for Image3-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img3');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image3-->
+
+<!--BEGIN Script for Image4-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img4');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image4-->
+
+<!--BEGIN Script for Image5-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img5');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image5-->
+<!--BEGIN Script for Image6-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img6');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image6-->
+
+<!--BEGIN Script for Image7-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img7');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image7-->
+
+<!--BEGIN Script for Image8-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img8');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image8-->
+
+<!--BEGIN Script for Image9-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img9');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image9-->
+
+<!--BEGIN Script for Image10-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img10');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image10-->
+
+<!--BEGIN Script for Image11-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img11');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image11-->
+
+<!--BEGIN Script for Image12-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img12');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image12-->
+
+<!--BEGIN Script for Image13-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img13');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image13-->
+
+<!--BEGIN Script for Image14-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img14');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image14-->
+
+<!--BEGIN Script for Image15-->
+<script>
+  // Get the modal
+var modal = document.getElementById('modal1');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('img15');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+<!--END Script for Image15-->
+  
+  
+  
+    <div class="fbg">
     <div class="fbg_resize">
       <h2><span>Contact</span> Us</h2>
         <p>Nossa Empresa tem o maior prazer em falar e responder você, não exite em escrever para nós.</p>
         <p class="contact_info"> <span>Endereço</span> Santa Rita do Sapucaí, MG - Brasil<br />
           <span>Telephone:</span> +5535 9 9152 5346<br />
-          <span>E-mail:</span> <a href="#"> contato@curtaja.com</a> </p>
+          <span>E-mail:</span> <a href="#"> contato@curtajaofficial.com</a> </p>
       </div>
       <div class="clr"></div>
     </div>
